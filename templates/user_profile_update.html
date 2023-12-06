@@ -1,0 +1,86 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<!DOCTYPE html>
+{% load django_bootstrap5 %}
+<html>
+
+<head>
+    <title>Chat</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.js"></script>
+        
+    
+</head>
+<!--Coded With Love By Mutiullah Samim-->
+
+<body>
+    
+    
+    
+    
+    <div class="page-content page-container" id="page-content">
+        <div class="padding">
+            {% bootstrap_messages %}
+            <div class="row container d-flex justify-content-center">
+                <div class="col-lg-11 col-xlg-4">
+                    <div class="card d-flex align-items-center justify-content-center">
+                        <h3 class="text-center"  style="color: white;"">Update Profile</h3>
+
+                        <div class="mb-4 text-center">
+                            <form action="" method="post" enctype="multipart/form-data">
+                                {% csrf_token %}
+
+                                <div class="form-group width: 100px" >
+
+                                    {% bootstrap_form form1 %}
+                                </div>
+                                <div class="form-group ">
+
+                                    {% bootstrap_form form2 %}
+                                </div>
+                                <button class="btn btn-primary m-t-10 m-b-20 waves-effect waves-dark btn btn-success btn-md btn-rounded" type="submit">Update</button>
+                            </form>
+                        </div>
+                    
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
