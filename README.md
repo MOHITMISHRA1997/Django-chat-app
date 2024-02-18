@@ -27,7 +27,7 @@ Make your Project Git friendly by :-
 Now clone my repo by doing this :-
 
 ```bash
-git clone [https://github.com/MOHITMISHRA1997/django-pinterest-clone.git](https://github.com/MOHITMISHRA1997/django-chat-app.git)
+git clone https://github.com/MOHITMISHRA1997/django-chat-app.git
 ```
 
 
